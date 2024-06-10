@@ -6,6 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { workExperience } from "../../../data/index";
+import Image from "next/image";
 
 
 export default function Experience() {
@@ -31,7 +32,7 @@ export default function Experience() {
                 borderRight: "7px solid  rgb(33, 150, 243)",
               }}
               date={item.date}
-              icon={<img src={item.thumbnail} alt="icon" />} // Using the thumbnail as an image inside the icon prop
+              icon={<Image src={item.thumbnail} alt="icon" />} 
               iconStyle={{
                 background: "rgb(33, 150, 243)",
                 fontSize: "1.5rem",
